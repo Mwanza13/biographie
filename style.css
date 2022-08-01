@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,200&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --first-color: white;
+
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 200px 0px 200px;
+    align-items: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #dab231);
+}
+
+.h-title {
+    color: var(--first-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav--link {
+    margin-left: 0.5rem;
+}
+
+.brand {
+    display: flex;
+    /*border: 1px solid black;*/
+    padding-left: 0.5rem;
+    margin-top: 3rem;
+}
+
+.b-gauche {
+    /*border: 1px solid red;*/
+    width: 60%;
+}
+
+.b-droite {
+    border: 1px solid rgb(213, 227, 236);
+    width: 60%;
+}
+
+.img-containeur {
+    width: 310px;
+    height: 310px;
+    border-radius: 60%;
+    border: 0.7rem solid white;
+}
+
+.img-d {
+    height: 310px;
+    width: 310px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(32, 19, 211);
+}
+
+.poa {
+    font-size: 1.5rem;
+}
+
+.btn {
+    margin-top: 3.5rem;
+    width: 25%;
+    background: none;
+    padding: 1.5rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0.3rem 0.3rem var(--first-color), inset 0.3rem 0.3rem var(--first-color);
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 0.5rem;
+}
+
+.btn:hover {
+    box-shadow: 0.0rem 0.0rem var(--first-color), inset 0.0rem 0.0rem var(--first-color);
+}
+
+.esis {
+    margin-top: 3rem;
+}
+
+.esis img {
+    width: 15%;
+
+}
+
+.tem {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #fb911f), url(./images/dmb3.jpg);
+    background-size: cover;
+    margin-top: 205px;
+}
+
+.tem .conten {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.tem .conten .box {
+    word-wrap: 250px;
+    margin: 20px;
+    background: #fff;
+    flex-direction: column;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tem .h3 {
+    color: #fff;
+}
+
+.tem .conten .box .imgbox {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.tem .conten .box .imgbox img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.tem .conten .box .txt {
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}
+
+.tem .conten .box .txt h3 {
+    color: #008000;
+    margin-top: 20%;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.tem .conten .box .imgbox .txt p {
+    color: #008000;
+}
+
+.tem .tit {
+    text-align: center;
+    margin-top: -130px;
+}
+
+.tem .tit .titre {
+    color: #fff;
+}
+
+.tem .tit p {
+    color: #fff;
+}
+
+.tem .conten .txt p {
+    color: #000000;
+}
+
+.tem .plus {
+    align-items: center;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.contact {
+    background: #2F4F4F;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+    margin-top: 25px;
+}
+
+.contact .ttext {
+    text-align: center;
+    align-items: center;
+    color: #ffff;
+
+}
+
+.contact p {
+    text-align: center;
+    align-items: center;
+    color: #ffff;
+}
+
+.form {
+    padding: 45px 20px;
+    background: #ffff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.form .input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form h3 {
+    color: #ffff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.form .input input,
+.form .input textarea {
+    width: 100%;
+    border: 1px solid #555;
+    padding: 2px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 250px;
+    resize: none;
+}
+
+.form .input input [type="submit"] {
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    background: #fb911f;
+    display: inline-block;
+    cursor: pointer;
+    max-width: 120px;
+}
+
+.copy {
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgb(228, 222, 222);
+    text-align: center;
+}
+
+.copy p:nt-child(1) {
+    color: #fb911f;
+}
+
+.copy a {
+    color: #2F4F4F;
+    text-decoration: none;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.copy p {
+    color: #111;
+    font-style: italic;
+}
+
+header.sticky {
+    background: #fb911f;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
